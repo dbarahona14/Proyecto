@@ -7,6 +7,6 @@ public class Controller {
 
     private @FXML TextField inputText;
     public Controller() {
-
+        //you suck
     }
 }
