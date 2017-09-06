@@ -16,6 +16,7 @@ public class Main extends Application {
         primaryStage.setTitle("Traductor de letras");
         primaryStage.getIcons().add(new Image("/resources/icon.png"));
         primaryStage.setScene(new Scene(root, this.width,this.height));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
