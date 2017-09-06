@@ -35,7 +35,7 @@ import javafx.stage.Stage;
 /**
  * Created by dBarahona14 on 29-08-2017.
  */
-public class TestWord extends Application{
+public class Letra extends Application{
 
     private Group root;
 
@@ -43,20 +43,47 @@ public class TestWord extends Application{
     @Override public void start(final Stage stage) throws Exception {
         this.root = new Group();
 
-        Pane b1= getUpe();
-        Pane a = getUpA();
-        Pane aMin = getUpa();
-        Pane b = getUpc();
-        b1.setLayoutX(150);
-        b1.setLayoutY(50);
+        Pane a= getUpX();
+        Pane a1 = getUpZ();
+        Pane b = getUpB();
+        Pane b1 = getUpb();
+        Pane c = getUpC();
+        Pane c1= getUpc();
+        Pane d = getUpD();
+        Pane d1 = getUpd();
+        Pane e = getUpE();
+        Pane e1 = getUpe();
+        Pane f = getUpF();
+        Pane f1 = getUpf();
+
         a.setLayoutX(50);
         a.setLayoutY(50);
-        aMin.setLayoutX(250);
-        aMin.setLayoutY(50);
-        b.setLayoutX(350);
+        a1.setLayoutX(150);
+        a1.setLayoutY(50);
+        b.setLayoutX(250);
         b.setLayoutY(50);
+        b1.setLayoutX(350);
+        b1.setLayoutY(50);
+        c.setLayoutX(450);
+        c.setLayoutY(50);
+        c1.setLayoutX(550);
+        c1.setLayoutY(50);
+        d.setLayoutX(50);
+        d.setLayoutY(250);
+        d1.setLayoutX(150);
+        d1.setLayoutY(250);
+        e.setLayoutX(250);
+        e.setLayoutY(250);
+        e1.setLayoutX(350);
+        e1.setLayoutY(250);
+        f.setLayoutX(450);
+        f.setLayoutY(250);
+        f1.setLayoutX(550);
+        f1.setLayoutY(250);
 
-        root.getChildren().addAll(a, b, aMin, b1);
+
+
+        root.getChildren().addAll(a,a1,b,b1,c,c1,d,d1,e,e1,f,f1);
 
 
 
@@ -67,7 +94,6 @@ public class TestWord extends Application{
 
     public Pane getUpL(){
         Pane letter= new Pane();
-        //letter.setAlignment(null);
         letter.setMinSize(100,200);
         letter.setMaxSize(100,200);
         letter.setStyle("-fx-background-color: white;");
@@ -209,7 +235,6 @@ public class TestWord extends Application{
 
         letter.getChildren().addAll(curve1,curve2, curve3, curve4);
 
-
         return letter;
     }
 
@@ -348,7 +373,7 @@ public class TestWord extends Application{
         letter.setStyle("-fx-background-color: white;");
 
         //here I begin.
-        CubicCurve curve1= new CubicCurve(40,33,40,70,40,125,40,132);
+        CubicCurve curve1= new CubicCurve(30,33,30,70,30,125,30,132);
 
 
         curve1.setStroke(Color.FORESTGREEN);
@@ -357,7 +382,7 @@ public class TestWord extends Application{
         curve1.setFill(null);
         curve1.setFocusTraversable(false);
 
-        CubicCurve curve2= new CubicCurve(20,25,90,10,150,125,40,132);
+        CubicCurve curve2= new CubicCurve(10,25,80,10,140,125,30,132);
 
         curve2.setStroke(Color.FORESTGREEN);
         curve2.setStrokeWidth(4);
@@ -444,6 +469,219 @@ public class TestWord extends Application{
         curve3.setFocusTraversable(false);
 
         letter.getChildren().addAll(curve1, curve2, curve3);
+
+        return letter;
+    }
+
+    public Pane getUpF(){
+        Pane letter= new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100,200);
+        letter.setMaxSize(100,200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1= new CubicCurve(25,10,25,40,25,80,25,132);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2= new CubicCurve(10,15,30,0,75,30,90,5);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        CubicCurve curve3= new CubicCurve(10,70,40,50,60,80,80,60);
+
+        curve3.setStroke(Color.FORESTGREEN);
+        curve3.setStrokeWidth(4);
+        curve3.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve3.setFill(null);
+        curve3.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2, curve3);
+
+        return letter;
+    }
+
+
+    public Pane getUpf(){
+        Pane letter= new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100,200);
+        letter.setMaxSize(100,200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1= new CubicCurve(100,55,0,0,90,210,20,190);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2= new CubicCurve(40,115,65,90,85,125,100,115);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        CubicCurve curve3= new CubicCurve(0,115,25,95,40,90,50,75);
+
+        curve3.setStroke(Color.FORESTGREEN);
+        curve3.setStrokeWidth(4);
+        curve3.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve3.setFill(null);
+        curve3.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2, curve3);
+
+        return letter;
+    }
+
+    public Pane getUpH(){
+        Pane letter= new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100,200);
+        letter.setMaxSize(100,200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1= new CubicCurve(5,10,20,15,30,15,40,10);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2= new CubicCurve(40,10,40,60,50,170,25,150);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        CubicCurve curve3= new CubicCurve(25,150,-5,65,120,50,90,10);
+
+        curve3.setStroke(Color.FORESTGREEN);
+        curve3.setStrokeWidth(4);
+        curve3.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve3.setFill(null);
+        curve3.setFocusTraversable(false);
+
+        CubicCurve curve4= new CubicCurve(90,10,70,5,70,170,100,148);
+
+        curve4.setStroke(Color.FORESTGREEN);
+        curve4.setStrokeWidth(4);
+        curve4.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve4.setFill(null);
+        curve4.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2, curve3, curve4);
+
+        return letter;
+    }
+
+    public Pane getUpI() {
+        Pane letter = new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100, 200);
+        letter.setMaxSize(100, 200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1 = new CubicCurve(20, 10, 55, 15, 70, 15, 80, 10);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2 = new CubicCurve(80, 10, 80, 90, 95, 180, 25, 125);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2);
+
+        return letter;
+    }
+
+    public Pane getUpZ() {
+        Pane letter = new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100, 200);
+        letter.setMaxSize(100, 200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1 = new CubicCurve(20, 30, 80, 0, 130, 66, 50, 110);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2 = new CubicCurve(50, 110, 190, 240, -30, 180, 100, 148);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2);
+
+        return letter;
+    }
+
+    public Pane getUpX() {
+        Pane letter = new Pane();
+        //letter.setAlignment(null);
+        letter.setMinSize(100, 200);
+        letter.setMaxSize(100, 200);
+        letter.setStyle("-fx-background-color: white;");
+
+        //here I begin.
+        CubicCurve curve1 = new CubicCurve(20, 30, 80, 0, 25, 180, 100, 148);
+
+
+        curve1.setStroke(Color.FORESTGREEN);
+        curve1.setStrokeWidth(4);
+        curve1.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve1.setFill(null);
+        curve1.setFocusTraversable(false);
+
+        CubicCurve curve2 = new CubicCurve(85, 30, 70, 55, 50, 100, 20, 150);
+
+        curve2.setStroke(Color.FORESTGREEN);
+        curve2.setStrokeWidth(4);
+        curve2.setStrokeLineCap(StrokeLineCap.ROUND);
+        curve2.setFill(null);
+        curve2.setFocusTraversable(false);
+
+        letter.getChildren().addAll(curve1,curve2);
 
         return letter;
     }
